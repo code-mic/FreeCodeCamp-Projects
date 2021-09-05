@@ -1,2 +1,73 @@
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id='title'>freeCodeCamp Survey Form</h1>
+    <p id='description'>This will help you and everyone else on our platform</p>
+    <form id='survey-form'>
+        <label for='name' id='name-label'>Full Name:</label>
+        <input 
+            type='text'
+            id='name' 
+            name='name'
+            placeholder="Enter your full name"
+            required>
+        <br>
+        <label for='email' id='email-label'>Email Address:</label>
+        <input
+            type='email'
+            id='email'
+            name='email'
+            placeholder="Enter your email address"
+            required>
+        <br>
+        <label for='number' id='number-label'>Age:</label>
+        <input
+            type='number'
+            id='number'
+            min='10'
+            max='99'
+            placeholder="Enter your age"
+            required>
+        <br>
+        <p>What do you thing is your programming level?</p>
+        <select id='dropdown'>
+            <option value='Entry Level'>Entry Level</option>
+            <option value='Junior Level'>Junior Level</option>
+            <option value='Intermediate Level'>Intermediate Level</option>
+            <option value='Senior Level'>Senior Level</option>
+        </select>
+        <br>
+        <p>Would you recommend us to a friend?</p>
+        <input type='radio' id='yes' name='recommended' value='yes'>
+        <label for='yes'>Yes</label><br>
+        <input type='radio' id='maybe' name='recommended' value='maybe'>
+        <label for='maybe'>Maybe</label><br>
+        <input type='radio' id='no' name='recommended' value='no'>
+        <label for='no'>No</label><br>
+
+        <p>What programming Languages do you know?</p>
+        <input type='checkbox' id='choice1' name='choice1' value='choice1'>
+        <label for='choice1'>Java</label><br>
+        <input type='checkbox' id='choice2' name='choice2' value='choice2'>
+        <label for='choice2'>C++</label><br>
+        <input type='checkbox' id='choice3' name='choice3' value='choice3'>
+        <label for='choice3'>Javascript</label><br>
+        <input type='checkbox' id='choice4' name='choice4' value='choice4'>
+        <label for='choice4'>HTML/CSS</label><br>
+        <input type='checkbox' id='choice5' name='choice5' value='choice5'>
+        <label for='choice5'>Python</label><br>
+        <input type='checkbox' id='choice6' name='choice6' value='choice6'>
+        <label for='choice6'>Elixer</label><br>
+        <input type='checkbox' id='choice7' name='choice7' value='choice76'>
+        <label for='choice7'>PHP</label><br>
+
+        <label for='comments'>Do you have any other comments?</label><br>
+        <textarea id='comments' name='comments' rows='4' cols='50'></textarea>
+        <br>
+        <input type='submit' id='submit' value='submit'>
+        </textarea>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
